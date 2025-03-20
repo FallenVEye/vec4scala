@@ -24,6 +24,9 @@ class Vector(list: List[Double]) extends AbstractSeq[Double]{
     def magnitude: Double = Math.sqrt(list.map(e => e * e).sum)
     def normalized: Vector = divide(magnitude)
 
+    def transpose: Matrix = Matrix(List(this))
+
+    override def toString(): String = list.mkString(", ")
 
     override def apply(i: Int): Double = list.apply(i)
 

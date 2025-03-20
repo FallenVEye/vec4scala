@@ -1,7 +1,8 @@
+package com.fallenveye
+
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.must.Matchers.contain
 import org.scalatest.matchers.should.Matchers
-import com.fallenveye.Vector
 
 class VectorTest extends AnyFlatSpec with Matchers {
     val vec1 = Vector(List(1, 2, 3, 4))
